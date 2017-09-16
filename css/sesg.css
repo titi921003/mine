@@ -1,0 +1,222 @@
+/*
+* @Author: Administrator
+* @Date:   2017-09-12 18:27:40
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-09-16 07:33:32
+*/
+@font-face {
+  font-family: 'iconfont';  /* project id 417920 */
+  src: url('http://at.alicdn.com/t/font_417920_9nd2hg9r5tawcdi.eot');
+  src: url('http://at.alicdn.com/t/font_417920_9nd2hg9r5tawcdi.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_417920_9nd2hg9r5tawcdi.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_417920_9nd2hg9r5tawcdi.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_417920_9nd2hg9r5tawcdi.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.wenz{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.head{
+	background-image: url('../img/bg.jpg');
+	/* position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0; */
+	height: 100%;
+	background-size: cover;
+	background-position: center center
+}
+.zhezhao{
+	width: 100%; height: 100%;
+	position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+.zhez-wenz{
+	position: absolute;
+	top: 50%; left: 50%;
+	color: #fff;
+	transform: translate(-50%, -50%);
+	font-weight: 700; 
+}
+.zhez-wenz h1{
+	font-size: 80px;
+	font-weight: 700;
+}
+.zhez-wenz-t{
+	margin-top: 10px;
+	text-align: justify;
+}
+.zhez-wenz-t:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+
+}
+.zhez-wenz-t a{
+	color: #fff;
+	font-size: 24px;
+	display: inline-block;	
+
+}
+.zhez-wenz-t a:hover{
+	color: #333;
+	
+}
+.jiant{
+	text-align: center;
+	position: absolute;
+    width: 100px;
+    height: 50px;
+    background: rgba(175, 175, 175, 0.2);
+    left: 50%;
+    bottom: 0;
+    margin-left: -50px;
+    border-radius: 50px 50px 0 0px;
+    z-index: 999;
+    overflow: hidden;
+}
+.jiant span{
+	display: block;
+	margin-top: 30px;
+	transform: translate(0, -15px);
+	transition: all 10s ease;
+
+}
+
+/* 固定导航开始 */
+.nav{
+	height: 32px;
+	position: fixed;
+	top: 0; left: 0;
+	padding: 20px;
+	z-index: 99999;
+	background-color: #fff;
+}
+.logo{
+	width: 92px; height: 25px;
+	float: left;
+	background-color: red;
+}
+.container-nav{
+	height: 32px;
+	float: right;
+}
+.container-nav li{
+	display: block;
+	margin-right: 15px;
+	color: #333;
+	float: left;
+}
+.container-nav a:hover{
+	color: #gold;
+	transition: all 2s ease;
+}
+
+
+/* 第二屏开始 */
+.dierping{
+	padding: 90px 0;
+}
+.dierping-neik{
+	padding: 0 15px;
+}
+.dierping-t-l{
+	padding: 0 15px;
+	float: left;
+}
+h1{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	letter-spacing: .5em;
+}
+.jies{
+	height: 130px;
+	font-size: 17px;
+	color: #888;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 6;
+	-webkit-box-orient: vertical;
+}
+.jies-b{
+	width: 540px; height: 330px;
+	padding-top: 30px;
+}
+.jies-b-1{
+	height: 66px;
+	/* background: red; */
+	
+}
+.jies-b-1-t{
+	height: 27px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	line-height: 27px;
+}
+.jies-b-1-b{
+	display: block;
+    height: 10px;
+    background: #d6d6d6;
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+}
+.jies-b-1-b-2{
+	
+    height: 100%;
+    
+    background: #222;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.disanping{
+	padding: 90px 0;
+	background-color: #f6f6f6;
+
+}
+.disanping-neik{
+	width: 1170px;
+	height: 134px;
+}
+.disanping-neir{
+	text-align: center;
+	padding: 0 15px;
+}
+.neir-t{
+	width: 50px; height: 50px;
+	margin: 0 auto;
+	position: relative;
+	transition: all 2s ease;
+}
+.neir-t i{
+	font-size: 28px;
+	text-align: center;
+	line-height: 50px;
+}
+.neir-dongx{
+	width: 25px; height: 25px;
+	border: 2px solid #333;
+	position: absolute;
+	top: 12.5px; left: 12.5px;
+	transition: all 2s ease;
+}
+.neir-dongx:hover{
+	transform: rotate(360deg);
+}
+.neir-t:hover .neir-dongx-b{
+	width: 50px; height: 50px;
+	border: 2px solid #333;
+	position: absolute;
+	top: 0px; left: 0px;
+}
+.neir-b{
+	color: #5a5a5a;
+}
